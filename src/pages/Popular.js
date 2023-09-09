@@ -22,7 +22,7 @@ function Popular() {
     const [watchItems,setWatchItems]=useState([]);
     
     useEffect(()=>{
-        axios.get("http://localhost:3001/popular").then((response)=>{
+        axios.get("https://borob.onrender.com/popular").then((response)=>{
             // setCarousalItems(response.data);
             // setisCarItems(true);
             setisCarItems(true);

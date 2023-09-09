@@ -22,7 +22,7 @@ function TopAiring() {
     const [watchItems,setWatchItems]=useState([]);
     
     useEffect(()=>{
-        axios.get("http://localhost:3001/top-airing").then((response)=>{
+        axios.get("https://borob.onrender.com/top-airing").then((response)=>{
             // setCarousalItems(response.data);
             // setisCarItems(true);
             setisCarItems(true);

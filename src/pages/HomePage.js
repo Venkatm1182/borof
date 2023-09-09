@@ -26,7 +26,7 @@ function HomePage() {
     const [watchItems,setWatchItems]=useState([]);
     
     useEffect(()=>{
-        axios.get("http://localhost:3001/anime-movies").then((response)=>{
+        axios.get("https://borob.onrender.com/anime-movies").then((response)=>{
             if(response.data!=="error"){
                 setCarousalItems(response.data);
                 setisCarItems(true);

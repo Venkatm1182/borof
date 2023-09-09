@@ -15,7 +15,7 @@ function SearchPage() {
     console.log(location.state.search);
     
     useEffect(()=>{
-        axios.get("http://localhost:3001/search",{params:{'keyw':location.state.search,"page":1}}).then((response)=>{
+        axios.get("https://borob.onrender.com/search",{params:{'keyw':location.state.search,"page":1}}).then((response)=>{
         setWatchItems(response.data);
         // setSearchVal("Found "+watchItems.length +" Results");
         setLength("Found "+response.data.length+" Results");

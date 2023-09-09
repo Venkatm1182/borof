@@ -18,7 +18,7 @@ function AnimeDetails() {
   var [isItem,setisItem]=useState(false);
   
   useEffect(()=>{
-    axios.get("http://localhost:3001/anime-details/"+id).then((res)=>{
+    axios.get("https://borob.onrender.com/anime-details/"+id).then((res)=>{
     setObject(res.data);
     console.log(res.data);
     // setType(res.data.type);

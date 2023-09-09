@@ -11,7 +11,7 @@ function Player() {
   const [url,setUrl]=useState("");
 
   useEffect(()=>{
-    axios.get("http://localhost:3001/vidcdn/watch/"+id).then((response)=>{
+    axios.get("https://borob.onrender.com/vidcdn/watch/"+id).then((response)=>{
     setPlaylist(response.data);
     setUrl(response.data.Referer);
     console.log(response.data.Referer);
