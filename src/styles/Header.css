@@ -1,0 +1,71 @@
+*,*::after,*::before{
+    margin:0;
+    border: border-box;
+}
+html{
+    font-size:63%;
+
+}
+body{font-size: 1.6rem;}
+li{list-style:none;}
+
+a{text-decoration:none; color:black;}
+
+.nav{
+    display:flex;align-items: center;
+    justify-content:space-around;
+    height: 8vh;
+    background: rgb(202, 233, 98);
+
+}
+.tit{
+text-transform: uppercase;
+font-weight: bold;
+font-size: 30px;
+}
+.menus{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    gap: 3rem;
+
+}
+.menutog div{
+width:3rem;
+height:0.2rem;
+margin: 0.4rem;
+background:red;
+}
+.menutog{
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .menutog{
+        display:block;
+    }
+    .menus{
+        position: fixed;
+        top:7vh;
+        right:0;
+        width:50%;
+        height: 93vh;
+        background: rgb(165, 197, 60);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition:0.5s ease-in-out;
+    }
+    
+}
+
+.nav-act{
+    transform: translateX(0);
+}
+
+
+
+.input{
+    height: 30px;
+    border-radius: 10px;
+}

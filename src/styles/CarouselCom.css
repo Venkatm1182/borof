@@ -1,0 +1,25 @@
+.carouselDiv{
+    height: 65vh;
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    color: white;
+    align-items: start;
+    display: flex;
+    border: 2px;
+    border-color: azure;
+    /* border-radius: 10px; */
+    /* margin-top: 200px; */
+}
+
+.carImage{
+    height: 90%;
+    width: 35%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.descriptionDiv{
+    margin-left: 10px;
+    align-items: start;
+}
